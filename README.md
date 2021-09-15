@@ -1,19 +1,18 @@
-# docker-centos8-apache-php74-nano
-Docker Container with CentOS 8 running Apache2, PHP7.4, crond, composer, pagespeed and nano
-First Test
+# docker-centos-mariadb
+Docker Container with CentOS 8 running MariaDB
 # Pull
 
 ```
-docker pull sh0x1337/docker-centos8-apache2-php74-nano
+docker pull sh0x1337/docker-centos-mariadb
 ```
 
 # Running Container
 
 ```
-docker run -v /opt/docker/docker_test/data:/var/www/page  --restart=always -d -it sh0x1337/docker-centos8-apache2-php74-nano
+docker run -v --restart=always -d -it sh0x1337/docker-centos-mariadb
 ```
 
 # Attach Container
 
 ```
-docker exec sh0x1337/docker-centos8-apache2-php74-nano /bin/bash
+docker exec sh0x1337/docker-centos-mariadb /bin/bash
